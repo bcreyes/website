@@ -1,0 +1,21 @@
+<HTML>
+  <Head>
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js">
+    </script>
+  </Head>
+  <body>
+    <div ng-app = "myApp" ng-controller = "textArea">
+      <p>Name: <input type="text" ng-model="name"></p>
+ 	    <p ng-bind="name">{{name}}</p>
+      <button type="button" ng-click="textClick()">change text area</button>
+      <div>
+        <textarea rows = 5 cols = 50>
+          {{name}}
+          {{name}}
+          {{text}}
+        </textarea>
+      </div>
+    </div>
+    <script src = "myApp.js"></script>
+  </body>
+</HTML>
