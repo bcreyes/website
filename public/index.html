@@ -1,34 +1,16 @@
-<HTML>
+<HTML ng-app = "myApp">
   <Head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js">
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
   </Head>
   <body>
-    <div ng-app = "myApp" ng-controller = "textArea">
-      <p>Name: <input type="text" ng-model="name"></p>
-      <header>
-        <img src = {{portrait}} width = "150px" height = auto >
-        <p ng-bind="name">{{name}}</p>
-      </header>
-      <nav>
-        <p> Link here another here
-            <button type="button" ng-click="textClick()">change text area</button>
-            <button type="button" ng-click="educationClick()">change text area</button>
-            <a href="#alternate">alternate page</a>
-            ButtonHere
-        </p>
-      </nav>
-      <div class="ng-view">
-      </div>
-      <div>
-        <textarea rows = 5 cols = 50>
-          {{first_name}}
-          {{last_name}}
-          {{full_name()}}
-          {{text}}
-        </textarea>
-      </div>
+    <div>
+      <a href="#alternate" id = 'link'>alternate page</a>
+
     </div>
+    <div ng-view></div>
     <script src = "myApp.js"></script>
   </body>
 </HTML>
